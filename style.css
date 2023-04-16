@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif ;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/header.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.logo-img{
+    height: 40px;
+    width: 148px;
+    cursor: pointer;
+}
+.signIn{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+.language{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    outline: 0;
+    background:transparent;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #fff;
+}
+.language img{
+    height: 10px;
+}
+.header-hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+     margin-top:100px;
+    
+}
+h1{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 60px;
+    max-width: 884px;
+}
+h3{
+font-weight: 400;
+margin-top: 20px;
+margin-bottom: 24px;
+font-size: 28px;
+}
+.header-hero p{
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+.emailSign-in input{
+width: 320px;
+height: 56px;
+display: inline-flex;
+align-items: center;
+outline: 0;
+background:transparent;
+padding: 7px 20px;
+border-radius: 4px;
+font-size: 24px;
+cursor: pointer;
+color: #fff;
+border: 1px solid #fff;
+}
+.emailSign-in .start{
+    display: inline-flex;
+align-items: center;
+height:56px;
+width: 201px;
+text-align: center;
+border: 0;
+outline: 0;
+background: #db0001;
+font-size: 24px;
+padding: 7px 20px;
+border-radius: 4px;
+cursor: pointer;
+color: #fff;
+}
+.line{
+    width: 100%;
+    height: 10px;
+    background-color:#232323;
+}
+
+
+/*features*/
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+/* faq*/
+.feature-faq{
+    width: 100%;
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.acordian{
+    padding: 4px 16px;
+    margin-bottom: 16px;
+    color: #fff;
+    background-color: #2d2d2d;
+   width: 1300px;
+}
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    margin-left: 16px;
+}
+.icon{
+    margin-right: 16px;
+    transition: transform 0.2s;
+}
+.icon.active{
+    transform: rotate(-45deg);
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 16px;
+    background-color: #2d2d2d;
+    transition: max-height 0.2s;
+    z-index: -1;
+}
+
+.faq-hero{
+    text-align: center;
+}
+.faq-hero p{
+    
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+.last-line{
+    margin-top: 20px;
+    background-color: #2d2d2d;
+    width: 100%;
+}
+/* footer*/
+.footer{
+    font-size: 15px;
+      width: 100%;
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+}
+.footer-top{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 100px;
+}
+.footer-top ul li{
+    list-style-type: none;
+}
+
+.col{
+    margin: 20px 40px;
+    line-height: 15px;
+}
+/*-------------media queries------------*/
+@media only screen and (max-width:600px){
+    .logo{
+        width: 100px;
+    }
+    .sidebuttons{
+        padding: 5px 10px;
+    }
+    .nav .language{
+        padding: 4px 8px;
+    }
+    .header-hero{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .header-hero h1{
+        font-size: 30px;
+    }
+    .emailSign-in button{
+font-size: 12px ;
+padding: 10px 15px;
+    }
+    .text-col,.img-col{
+flex-basis: 100%;
+    }
+    .features h2{
+        font-size: 30px;
+    }
+    .features p{
+        font-size: 15px;
+    }
+    .row:nth-child(2),.row:nth-child(4){
+flex-direction: column-reverse;
+    }
+    .features .row{
+        padding: 10px 0;
+    }
+    .feature-faq h1{
+        font-size: 20px;
+    }
+    .acordian .question .answer{
+        font-size: 14px;
+    }
+    .question{
+padding: 10px;
+font-size: 14px;
+    }
+    
+}
